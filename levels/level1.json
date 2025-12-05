@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "difficulty": "Easy",
+  "gridSize": 6,
+  "exitRow": 2,
+  "cars": [
+    { "id": "hero", "type": "h", "len": 2, "col": 1, "row": 2, "color": "#ff4757", "isHero": true },
+    { "id": "c1",   "type": "v", "len": 3, "col": 4, "row": 0, "color": "#2ed573" },
+    { "id": "c2",   "type": "v", "len": 2, "col": 0, "row": 0, "color": "#1e90ff" },
+    { "id": "c3",   "type": "h", "len": 2, "col": 0, "row": 4, "color": "#ffa502" }
+  ]
+}

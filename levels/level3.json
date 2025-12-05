@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "difficulty": "Hard",
+  "gridSize": 6,
+  "exitRow": 2,
+  "cars": [
+    { "id": "hero", "type": "h", "len": 2, "col": 0, "row": 2, "color": "#ff4757", "isHero": true },
+    { "id": "c1",   "type": "v", "len": 3, "col": 2, "row": 0, "color": "#2ed573" },
+    { "id": "c2",   "type": "h", "len": 3, "col": 3, "row": 1, "color": "#1e90ff" },
+    { "id": "c3",   "type": "v", "len": 2, "col": 3, "row": 2, "color": "#ffa502" },
+    { "id": "c4",   "type": "v", "len": 2, "col": 5, "row": 2, "color": "#8e44ad" },
+    { "id": "c5",   "type": "h", "len": 2, "col": 4, "row": 4, "color": "#34495e" },
+    { "id": "c6",   "type": "h", "len": 2, "col": 0, "row": 3, "color": "#16a085" },
+    { "id": "c7",   "type": "v", "len": 3, "col": 2, "row": 3, "color": "#c0392b" }
+  ]
+}
