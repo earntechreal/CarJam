@@ -1,0 +1,62 @@
+:root {
+    --cell-size: 0px; /* Calculated via JS */
+    --board-size: 0px;
+    --gap: 4px;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+    touch-action: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.game-ui {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#game-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eebb99; /* Ground color */
+}
+
+#board {
+    position: relative;
+    background-color: #333;
+    border-radius: 10px;
+    border: 8px solid #555;
+    /* Dimensions set by JS */
+}
+
+.car {
+    position: absolute;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease-out; /* Smooth slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add visual details to cars */
+.car::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 40%;
+    background: rgba(0,0,0,0.2); /* Windshield */
+    border-radius: 2px;
+}
