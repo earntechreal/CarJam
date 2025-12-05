@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Parking Jam</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Specific styles for Home to center content */
+        body.home {
+            background-color: #ff4757;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 0px #333;
+            text-align: center;
+        }
+        .menu-btn {
+            background: white;
+            color: #ff4757;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            margin: 10px;
+            width: 200px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .menu-btn:active { transform: scale(0.95); }
+    </style>
+</head>
+<body class="home">
+
+    <div class="logo">
+        PARKING<br>JAM
+    </div>
+
+    <!-- Links to Game with default level 1 -->
+    <button class="menu-btn" onclick="location.href='game.html?level=1'">PLAY</button>
+    <button class="menu-btn" onclick="location.href='levels.html'">LEVELS</button>
+    
+    <!-- Simple settings toggle (visual only for now) -->
+    <button class="menu-btn" onclick="alert('Sound: ON\nVibration: ON')">SETTINGS</button>
+
+</body>
+</html>

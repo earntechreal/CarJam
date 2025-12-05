@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Win!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+            background-color: #2ed573;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .stars { font-size: 2rem; margin-bottom: 40px; }
+        .action-btn {
+            background: white;
+            color: #2ed573;
+            border: none;
+            padding: 15px 50px;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>LEVEL CLEARED!</h1>
+    <div class="stars">⭐⭐⭐</div>
+    
+    <button id="next-level-btn" class="action-btn">NEXT LEVEL ▶</button>
+    <button class="action-btn" style="font-size:1rem; padding: 10px 30px;" onclick="location.href='main.html'">HOME</button>
+
+    <script src="scripts/ui.js"></script>
+    <script>
+        // Simple inline logic to handle "Next Level"
+        const params = new URLSearchParams(window.location.search);
+        const currentLevel = parseInt(params.get('level')) || 1;
+        
+        document.getElementById('next-level-btn').onclick = () => {
+            // Check if we are at max level (e.g., 3)
+            if(currentLevel >= 3) {
+                alert("You've finished all available levels!");
+                location.href = 'levels.html';
+            } else {
+                location.href = `game.html?level=${currentLevel + 1}`;
+            }
+        };
+    </script>
+</body>
+</html>

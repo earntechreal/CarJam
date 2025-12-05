@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Parking Grid Escape</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Top UI Bar -->
+    <header class="game-ui">
+        <button id="btn-back" onclick="location.href='levels.html'">Back</button>
+        <div id="level-indicator">Level <span id="current-level-num">1</span></div>
+        <button id="btn-reset">↺</button>
+    </header>
+
+    <!-- Game Container -->
+    <main id="game-container">
+        <!-- The Grid Board will be injected here by JS -->
+        <div id="board"></div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/touch.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
